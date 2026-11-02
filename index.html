@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIDI`s Mobile Beauty Spa | We Bring The Spa To You</title>
+
+    <!-- SEO Meta Tags -->
+     <meta name="description" content="DIDI`s Mobile Beauty Spa offers professional mobile spa services, bringing relaxation and rejuvenation to your preferred location. Book your appointment today!">
+     <meta name="keywords" content="mobile spa Makhado, massage treatment, Swedish massage, deep tissue, hot stone massage, Didi's Mobile Beauty Spa">
+     <meta name="author" content="Dovhambele Mukwevho">
+
+    <!-- Open Graph / social SEO -->
+     <meta property="og:title" content="DIDI`s Mobile Beauty Spa | We Bring The Spa To You">
+     <meta property="og:description" content="Relax and rejuvenate with professional massage treatments delivered to your preferred location.">
+     <meta property="og:type" content="website">
+     
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. HEADER / NAVIGATION -->
+    <header class="navbar">
+        <div class="logo">DIDI`s Mobile Spa</div>
+        <nav>
+            <ul class="nav-linkks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#treatments">Treatments</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="#booking" class="btn btn-gold">Book Now</a>
+    </header>
+
+    <!-- 2. HERO SECTION-->
+     <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Beauty and Relaxation Comes To You</h1>
+            <p>We bring the spa to you. Relax and Rejuvenate in your preferred location</p>
+            <a href="#booking" class="btn btn-pink">Book an Appointment</a>
+        </div>
+     </section>
+    
+     <!-- 3. OUR TREATMENTS -->
+      <section id="treatments" class="treatment-section">
+        <h2>Our Treatments</h2>
+        <div class="treatments-grid">
+            <div class="card">
+                <h3>Swedish Massage</h3>
+                <p>Gentle, relaxing full body massage to ease stress.</p>
+                <div class="card-details"><strong>60 MIN</strong> | <span class="price">R300</span></div>
+            </div>
+            <div class="card">
+                <h3>Deep Tissue Massage</h3>
+                <p>Targets deep muscle layers for severe tension relief.</p>
+                <div class="card-details"><strong>60 MIN</strong> | <span class="price">R450</span></div>
+            </div>
+            <div class="card">
+                <h3>Hot Stone Massage</h3>
+                <p>Smooth heated stones used to relax tight muscles.</p>
+                <div class="card-details"><strong>75 MIN</strong> | <span class="price">R350</span></div>
+            </div>
+            <div class="card">
+                <h3>Aromatherapy Massage</h3>
+                <p>Essential oil massage to enhance physical and emotional well being.</p>
+                <div class="card-details"><strong>60 MIN</strong> | <span class="price">R400</span></div>
+            </div>
+            <div class="card">
+                <h3>Prenatal Massage</h3>
+                <p>Safe and soothing treatments tailored for expactant mothers.</p>
+                <div class="card-details"><strong>60 MIN</strong> | <span class="price">R450</span></div>
+            </div>
+            <div class="card">
+                <h3>Back, Neck & Shoulder Relief</h3>
+                <p>Focused tension release for high stress areas.</p>
+                <div class="card-details"><strong>60 MIN</strong> | <span class="price">R250</span></div>
+            </div>
+        </div>
+        <div class="text center mt-20">
+            <a href="#contact" class="btn btn-outline">View All Treatments</a>
+        </div>
+      </section>
+
+      <!-- 4. WHY CHOOSE US? -->
+       <section class="why-us-section">
+        <h2>Why Choose Us?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>Professional Therapists</h3>
+                <p>Qualified, certified wellness experts.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Quality Products</h3>
+                <p>Premium, skin safe wellness essentials.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Clean & Safe Equipments</h3>
+                <p>100% sanitized tools brought to your door.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Mobile Service</h3>
+                <p>Complete convenience at your location.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Relax and Renew</h3>
+                <p>Personalized care tailored to your need.</p>
+            </div>
+        </div>
+       </section>
+
+       <!-- 5. HOW IT WORKS -->
+        <section class="how-it-works-section">
+            <h2>How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <h3>1. Choose Treatment</h3>
+                    <p>Select the massage you want.</p>
+                </div>
+                <div class="step-card">
+                    <h3>2. Book Appointment</h3>
+                    <p>Provide your preferred time and date.</p>
+                </div>
+                <div class="step-card">
+                    <h3>3. We Come To You</h3>
+                    <p>Our therapist arrives fully equipped at your location.</p>
+                </div>
+                <div class="step-card">
+                    <h3>4. Relax & Enjoy</h3>
+                    <p>Unwind and enjoy your personalized treatment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CALL TO ACTION & BOOKING-->
+         <section id="booking" class="booking-section">
+            <h2>Book an Appointment</h2>
+            <p class="section-subtitle">Fill out the form below and we will confirm your booking via WhatsApp.</p>
+
+            <form id="bookingform" class="booking-form" novalidate>
+               <div class="form-group"> 
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="e.g., John Doe" required>
+                <span class="error-message" id="fullname-error"></span>
+                </div>
+
+                <div class="form-group">
+                <label for="phone">Phone Number(WhatsApp) *</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g., 0731246929" required>
+                <span class="error-message" id="phone-error"></span>
+                </div>
+
+                <div class="form-group">
+                <label for="treatment">Select Treatment *</label>
+                <select id="treatment" name="treatment" required>
+                    <option value="">Select Treatment</option>
+                    <option value="swedish">Swedish Massage</option>
+                    <option value="deep-tissue">Deep Tissue Massage</option>
+                    <option value="hot-stone">Hot Stone Massage</option>
+                    <option value="aromatherapy">Aromatherapy Massage</option>
+                    <option value="prenatal">Prenatal Massage</option>
+                    <option value="back-neck-shoulder">Back, Neck & Shoulder Relief</option>
+                </select>
+                <span class="error-message" id="treatment-error"></span>
+                </div>
+
+                <div class="form-group">
+                <label for="bookingDate">Preferred Date *</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
+                <span class="error-message" id="bookingDate-error"></span>
+                </div>
+
+                <div class="form-group">
+                <label for="address">Preferred Address *</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+                <span class="error-message" id="address-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-gold btn-block">Confirm Booking Request</button>
+                <div id="formSuccess" class="success-message"></div>
+            </form>
+         </section>
+
+            <h2>Ready to Relax, Renew & Revive?</h2>
+            <p>Book your appointment today!</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-gold">Book Now</a>
+                <a href="#contact" class="btn btn-outline-white">Contact Us</a>
+            </div>
+         </section>
+
+         <!-- 7. CONTACT SECTION -->
+          <section id="Contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <p>Call / WhatsApp</p>
+                    <p><a href="https://wa.me/27731246929" target="_blank">073 124 6929</a></p> 
+                </div>
+                <div class="contact-card">
+                    <h3>Facebook</h3>
+                    <p>Divhambele Mukwevho</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Service Areas</h3>
+                    <p>Home, Hotels & Special Events</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Opening Hours</h3>
+                    <p>Mon - Sun: 08:00 - 18:00</p>
+                </div>  
+            </div>
+          </section>
+
+          <!-- 8. FOOTER -->
+           <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>DIDI`s Mobile Beauty Spa</h3>
+                    <p>Relax. Rejuvenate. We Come To You.</p> 
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#treatments">Treatments</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <p>Facebook | Instagram | TikTok</p>
+                </div>
+            </div>
+            <div class="footer-buttom">
+                <p>&copy; 2026 DIDI`s Mobile Beauty Spa. All Rights Reserved.</p>
+            </div>
+           </footer>
+           <script src="script.js"></script>
+</body>
+</html>

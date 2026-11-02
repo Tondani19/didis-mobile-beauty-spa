@@ -1,0 +1,460 @@
+/* ====================================================
+   1. Base Reset & CSS Variables
+   ==================================================== */
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-pink: #FADADD;
+    --secondary-pink: #F4C2C2;
+    --soft-gold: #D4AF37;
+    --dark-text: #333333;
+    --light-bg: #FFFDFB;
+    --card-bg: #FFFFFF;
+}
+
+body {
+    font-family: Arial, sans-serif ;
+    color: var(--dark-text);
+    background: var(--light-bg);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--dark-text);
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--soft-gold);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* ====================================================
+   2. Buttons & Interactivity
+   ==================================================== */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-pink {
+    background-color: var(--primary-pink);
+    color: var(--dark-text);
+}
+
+.btn-pink:hover {
+    background-color: var(--secondary-pink);
+}
+
+.btn-gold {
+    background-color: var(--soft-gold);
+    color: #FFFFFF;
+}
+
+.btn-gold:hover {
+    background-color: #b8952b;
+}
+
+.btn-outline {
+    border-color: var(--soft-gold);
+    color: var(--dark-text);
+}
+
+.btn-outline:hover {
+    background-color: var(--soft-gold);
+    color: #FFFFFF;
+}
+
+.btn-outline-white {
+    border-color:#FFFFFF ;
+    color: #FFFFFF;
+}
+
+.btn-outline-white:hover {
+    background-color: #FFFFFF;
+    color: var(--dark-text);
+}
+
+/* ========================================================
+   3. Header & Navigation
+   ======================================================== */
+.navbar {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 1rem 5%;
+       background-color: #FFFFFF;
+       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+       position: sticky;
+       top: 0;
+       z-index: 1000;
+   }
+
+   .logo {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1,5rem;
+      font-weight: bold;
+      color: var(--soft-gold);
+   }
+
+   .nav-links {
+       display: flex;
+       gap: 1.5rem;
+   }
+
+   .nav-links a:link {
+       color: var(--soft-gold);
+   }
+
+   /* ======================================================
+      4. Hero Banner
+      ====================================================== */
+   .hero {
+        background: linear-gradient(rgba(250, 218, 221, 0.6), rgba(255, 225, 255, 0.8)), 
+                     url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80') center/cover;
+        padding: 6rem 1rem;   
+        text-align: center;          
+   }
+
+   .hero-content {
+       max-width: 700px;
+       margin: 0 auto;
+   }
+
+   .hero h1 {
+       font-size: 2.5rem;
+       margin-bottom: 1rem;
+   }
+
+   .hero p {
+       font-size: 1.1rem;
+       margin-bottom: 1.5rem;
+   }
+
+   /*===============================================================
+     5. Treatments Section & Pricing 
+     =============================================================== */
+    .treatment-section, why-us-section, .how-it-works-section, .contact-section {
+        padding: 4rem 5%;
+    }
+
+    .treatment-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .card {
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 10px;
+        border: 1px solid var(--primary-pink);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(212, 175, 55, 0.15);
+    }
+
+    .card-details {
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+        border-top: 1px dashed var(--primary-pink);
+        font-size: 0.9rem;
+        color: var(--dark-text);
+    }
+
+    .price {
+        font-weight: bold;
+        color: var(--soft-gold);
+        font-size: 1.1rem;
+    }
+
+    /* ==================================================
+       6. Why Choose Us?
+       ================================================== */
+    .why-us-section {
+        background-color: var(--primary-pink);
+    }
+
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .feature-item{
+        background-color: #FFFFFF;
+        padding: 1.25rem;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    /* ====================================================
+       7. How It Works
+       ==================================================== */
+    .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .step-card {
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 8px;
+        text-align: center;
+        border-top: 4px solid var(--soft-gold);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* =========================================================================
+       8. Call to Action & Booking
+       ========================================================================== */
+    .cta-section {
+        background-color: var(--soft-gold);
+        color: #FFFFFF;
+        padding: 4rem 1rem;
+        text-align: center;
+    }
+
+    .cta-section h2 {
+        color: #FFFFFF;
+    }
+
+    .cta-section h2::after {
+        background-color: #FFFFFF;
+    }
+
+    .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-buttons {
+        display: flex;
+        justify-content: baseline;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    /* =======================================================
+       9. Contact Section
+       ======================================================= */
+    .contact-info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.25rem;
+        margin-top: 2rem;
+    }
+
+    .contact-card {
+        background-color: var(--card-bg);
+        padding: 1.25rem;
+        border-radius: 8px;
+        border: 1px solid #eeeeee;
+        text-align: center;
+    }
+
+    .contact-card a {
+        color: var(--soft-gold);
+        font-weight: bold;
+    }
+
+    .contact-card a:hover {
+        text-decoration: underline;
+    }
+
+    /* ==========================================================
+       10. Footer
+       ========================================================== */
+    .footer {
+        background-color: #222222;
+        color: #ffffff;
+        padding: 3rem 5% 1rem;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-col h3 {
+        color: var(--soft-gold);
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .footer-col ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+        color: #cccccc;
+    }
+
+    .footer-col a:hover {
+        color: var(--primary-pink);
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 1.5rem;
+        border-top: 1px solid #444444;
+        font-size: 0.85rem;
+        color: #888888;
+    }
+
+    /* =======================================================
+       11. Responsive Breakpoints
+       ======================================================= */
+    @media (max-width:768px) {
+        .navbar {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .nav-links{
+            gap: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    /* =======================================================
+       12. Booking Form Styles & Validation
+       ======================================================= */
+       .booking-section {
+        padding: 4rem 5%;
+        background-color: var(--light-bg);
+       }
+
+       .section-subtitle {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #666666;
+       }
+
+       .booking-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        padding: 2rem;
+        border-radius: 10px;
+        border: 1px solid var(--primary-pink);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+       }
+
+       .form-group {
+        margin-bottom: 1.25rem;
+        display: flex;
+        flex-direction: column;
+       }
+
+         .form-group label {
+          margin-bottom: 0.4rem;
+          font-weight: bold;
+          font-size: 0.95rem;
+         }
+
+         .form-group input,
+         .form-group select,
+         .form-group textarea {
+                padding: 0.75rem;
+                border: 1px solid #cccccc;
+                border-radius: 5px;
+                font-size: 0.95rem;
+                font-family: inherit;
+                transition: border-color 0.3s ease;
+            }
+
+         .form-group input:focus,
+         .form-group select:focus,
+         .form-group textarea:focus {
+                border-color: var(--soft-gold);
+                outline: none;
+         }
+
+         .form-group input.invalid,
+         .form-group select.invalid,
+         .form-group textarea.invalid {
+                border-color: #e74c3c;
+                background-color: #fdf2f2;
+         }
+
+         .error-message {
+                color: #e74c3c;
+                font-size: 0.85rem;
+                margin-top: 0.3rem;
+                display: none;
+         }
+
+         .error-message.active {
+                display: block;
+         }
+
+         .success-message {
+                margin-top: 1rem;
+                padding: 1rem;
+                background-color: #d4edda;
+                color: #155724;
+                border: 1px solid #c3e6cb;
+                border-radius: 5px;
+                text-align: center;
+                display: none;
+         }
+
+         .btn-block {
+            width: 100%;
+            margin-top: 1rem;
+         }
